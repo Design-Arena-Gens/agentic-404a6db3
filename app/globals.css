@@ -1,0 +1,33 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: light;
+}
+
+body {
+  min-height: 100vh;
+}
+
+.glass-panel {
+  @apply bg-white/70 backdrop-blur border border-slate-200 shadow-lg rounded-3xl;
+}
+
+.panel-title {
+  @apply text-lg font-semibold tracking-tight text-ink;
+}
+
+.subtle-scrollbar::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+.subtle-scrollbar::-webkit-scrollbar-thumb {
+  background-color: theme("colors.slate.300");
+  border-radius: 9999px;
+}
+
+.subtle-scrollbar::-webkit-scrollbar-track {
+  background-color: transparent;
+}
